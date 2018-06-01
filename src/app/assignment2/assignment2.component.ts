@@ -14,9 +14,13 @@ export class Assignment2Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.username = 'zachary';
+    this.username = '';
     this.btnStatus = true;
 
+  }
+
+  onClick() {
+    this.username = '';
   }
 
 }

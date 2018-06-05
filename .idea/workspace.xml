@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="765a7df8-dfd3-4e7a-bc4d-6929da915321" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Angular 2 and TypeScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/Angular 2 and TypeScript.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp-databinding-start/src/app/server-element/server-element.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-databinding-start/src/app/server-element/server-element.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp-databinding-start/src/app/server-element/server-element.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-databinding-start/src/app/server-element/server-element.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -24,17 +23,28 @@
       <file leaf-file-name="cockpit.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="224">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cockpit.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cockpit.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="1064">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cockpit.component.spec.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,8 +52,17 @@
       <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="196">
+              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -59,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server-element.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server-element.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/server-element/server-element.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
@@ -94,6 +113,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>import \{Component\, EventEmitter\, OnInit\, Output\} from \'\@angular\/core\'\;\nimport \{ServerDataModel\} from \'\.\.\/share\/serverData\.model\'\;\nimport \{BlueprintDataModel\} from \'\.\.\/share\/blueprintData\.model\'\;\n\n\@Component\(\{\n  selector\: \'app\-cockpit\'\,\n  templateUrl\: \'\.\/cockpit\.component\.html\'\,\n  styleUrls\: \[\'\.\/cockpit\.component\.css\'\]\n\}\)\nexport class CockpitComponent implements OnInit \{\n    \@Output\(\'svrCreated\'\) serverCreated \= new EventEmitter\&lt;ServerDataModel\&gt;\(\)\;\n    \@Output\(\'bpCreated\'\) blueprintCreated \= new EventEmitter\&lt;BlueprintDataModel\&gt;\(\)\;\n    newName \= \'\'\;\n    newContent \= \'\'\;\n    \n  constructor\(\) \{ \}\n\n  ngOnInit\(\) \{\n  \}\n\n    onAddServer\(input\) \{\n      console\.log\(input\)\;\n      console\.log\(\'onAddServer called\'\)\;\n        this\.serverCreated\.emit\(new ServerDataModel\(\n            \'server\'\,\n            this\.newName\,\n            this\.newContent\n        \)\)\;\n    \}\n\n    onAddBlueprint\(\) \{\n        console\.log\(\'onBlueprint called\'\)\;\n        this\.blueprintCreated\.emit\(new BlueprintDataModel\(\n            \'blueprint\'\,\n            this\.newName\,\n            this\.newContent\n        \)\)\;\n    \}\n\n\}\n</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -103,12 +127,12 @@
         <option value="$PROJECT_DIR$/src/app/assignment3/assignment3.component.html" />
         <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/share/blueprintData.model.ts" />
         <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/share/serverData.model.ts" />
-        <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.html" />
-        <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.ts" />
         <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/server-element/server-element.component.ts" />
         <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/server-element/server-element.component.html" />
+        <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.html" />
+        <option value="$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.ts" />
       </list>
     </option>
   </component>
@@ -149,6 +173,24 @@
             <path>
               <item name="learning-angular" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning-angular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning-angular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning-angular" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-recipe-proj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning-angular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning-angular" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-recipe-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning-angular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning-angular" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-recipe-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learning-angular" type="b2602c69:ProjectViewProjectNode" />
@@ -239,26 +281,26 @@
       <updated>1527887915705</updated>
       <workItem from="1527887916937" duration="592000" />
       <workItem from="1528148547522" duration="7128000" />
-      <workItem from="1528218424759" duration="1658000" />
+      <workItem from="1528218424759" duration="3648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9378000" />
+    <option name="totallyTimeSpent" value="11368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1440" y="-398" width="1440" height="2560" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24594785" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32967925" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17945595" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17940335" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -268,7 +310,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967925" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,15 +356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/share/serverData.model.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -341,33 +373,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/server-element/server-element.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -385,6 +396,43 @@
           <folding>
             <element signature="n#style#0;n#strong#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmp-databinding-start/src/app/cockpit/cockpit.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>

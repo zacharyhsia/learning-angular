@@ -30,3 +30,44 @@ You then also need to add the import from @angular/forms  in the app.module.ts f
 import { FormsModule } from '@angular/forms'; 
 ```
 
+## View Capsulation
+
+```typescript
+@Component({
+    ...
+    // default
+    encapsulation: ViewEncapsulation.Emulated
+    
+    // remove encapsulation
+    encapsulation: ViewEncapsulation.None
+    
+    // shadow DOM
+    encapsulation: ViewEncapsulation.Native
+})
+```
+
+### Local Reference
+
+```html
+<input type="text" class="form-control" #serverInput>
+...
+<button class="btn btn-primary" (click)="onAddServer(serverInput)">Add Server</button>
+...
+
+onAddServer(input: HTMLInputElement) {
+
+}
+```
+
+Using `ViewChild` to get the HTML DOM
+
+```html
+<input type="text" class="form-control" #serverContent>
+```
+
+```typescript
+@ViewChild('serverContent') serverContent;
+
+this.serverContant.nativeElement.value;
+```
+

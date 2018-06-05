@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 import {ServerDataModel} from '../share/serverData.model';
 import {BlueprintDataModel} from '../share/blueprintData.model';
 
@@ -8,10 +8,12 @@ import {BlueprintDataModel} from '../share/blueprintData.model';
   styleUrls: ['./cockpit.component.css']
 })
 export class CockpitComponent implements OnInit {
-    @Output() serverCreated = new EventEmitter<ServerDataModel>();
-    @Output() blueprintCreated = new EventEmitter<BlueprintDataModel>();
+    @Output('svrCreated') serverCreated = new EventEmitter<ServerDataModel>();
+    @Output('bpCreated') blueprintCreated = new EventEmitter<BlueprintDataModel>();
     newName = '';
     newContent = '';
+
+    @ViewChild('serverContent') serverContent;
 
   constructor() { }
 
@@ -19,7 +21,6 @@ export class CockpitComponent implements OnInit {
   }
 
     onAddServer() {
-      console.log('onAddServer called');
         this.serverCreated.emit(new ServerDataModel(
             'server',
             this.newName,

@@ -1,11 +1,11 @@
 <div class="container">
   <app-cockpit (serverCreated)="onServerAdded($event)"
-  (blueprintCreated)="onBlueprintAdded"></app-cockpit>
+  (blueprintCreated)="onBlueprintAdded($event)"></app-cockpit>
   <hr>
   <div class="row">
     <div class="col-xs-12">
       <app-server-element *ngFor="let ele of serverElements"
-      [aliasElement]="ele"></app-server-element>
+      [element]="ele"></app-server-element>
     </div>
   </div>
 </div>

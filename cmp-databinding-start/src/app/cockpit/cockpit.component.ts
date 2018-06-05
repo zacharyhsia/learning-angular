@@ -19,6 +19,7 @@ export class CockpitComponent implements OnInit {
   }
 
     onAddServer() {
+      console.log('onAddServer called');
         this.serverCreated.emit(new ServerDataModel(
             'server',
             this.newName,
@@ -27,8 +28,9 @@ export class CockpitComponent implements OnInit {
     }
 
     onAddBlueprint() {
+        console.log('onBlueprint called');
         this.blueprintCreated.emit(new BlueprintDataModel(
-            'server',
+            'blueprint',
             this.newName,
             this.newContent
         ));

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ServerDataModel} from './share/serverData.model';
+import {BlueprintDataModel} from './share/blueprintData.model';
 
 @Component({
   selector: 'app-root',
@@ -6,23 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  serverElements = [];
-  newServerName = '';
-  newServerContent = '';
+    // serverElements = [{type: 'server', name: 'testServer', content: 'just a test server'}];
+    serverElements = [];
 
-  onAddServer() {
-    this.serverElements.push({
-      type: 'server',
-      name: this.newServerName,
-      content: this.newServerContent
-    });
-  }
+    onServerAdded(serverData: ServerDataModel) {
+        this.serverElements.push(
+            new ServerDataModel('server', serverData.serverName, serverData.serverContent);
+        )
+    }
 
-  onAddBlueprint() {
-    this.serverElements.push({
-      type: 'blueprint',
-      name: this.newServerName,
-      content: this.newServerContent
-    });
-  }
+    onBlueprintAdded(blueprintData: BlueprintDataModel) {
+        this.serverElements.push(
+            new BlueprintDataModel('blueprint', blueprintData.blueprintName, blueprintData.blueprintContent)
+        );
+    }
 }

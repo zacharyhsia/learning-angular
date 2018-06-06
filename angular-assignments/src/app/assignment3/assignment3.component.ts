@@ -8,7 +8,7 @@ const CLICK_LOG = 'click button';
 })
 
 export class Assignment3Component implements OnInit {
-  
+
 
   buttonName = 'Show';
   paragraph = '';
@@ -33,7 +33,7 @@ export class Assignment3Component implements OnInit {
     if (this.logs.length <= 5) {
       return 'white';
     } else {
-      return 'green'
+      return 'green';
     }
   }
 }
